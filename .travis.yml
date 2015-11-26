@@ -10,7 +10,7 @@ before_install:
   - docker login -e=$DOCKER_EMAIL -u=$DOCKER_USERNAME -p=$DOCKER_PASSWORD
   - echo "Docker Hub credentials are working"
   - docker build -t build-springxd-hsqldb .
-  - docker run -it -d --publish 0.0.0.0:3000:3000 --name=build-springxd-hsqldb build-springxd-hsqldb
+  - docker run -it -d --publish 0.0.0.0:9101:9101 --name=build-springxd-hsqldb build-springxd-hsqldb
   - docker ps -a
 
 script:
