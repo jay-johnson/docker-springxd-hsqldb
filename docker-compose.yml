@@ -1,0 +1,11 @@
+hsqldb:
+  image: jayjohnson/springxd-hsqldb
+  container_name: "hsqldb"
+  hostname: "hsqldb"
+  user: springxd
+  ports:
+    - "9001:9101"
+  cap_add:
+    - ALL
+    - NET_ADMIN
+    - SYS_ADMIN
